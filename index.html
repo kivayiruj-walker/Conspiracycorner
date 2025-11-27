@@ -5,56 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conspiracy Corner | Hidden Truths Revealed</title>
   <meta name="description" content="Explore deep conspiracy theories, hidden history and secret government files on Conspiracy Corner.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Conspiracy Corner | Hidden Truths Revealed">
+  <meta property="og:description" content="Explore deep conspiracy theories, hidden history and secret government files on Conspiracy Corner.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kivayiruj-walker.github.io/Conspiracycorner/">
+  <meta property="og:image" content="/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://kivayiruj-walker.github.io/Conspiracycorner/">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header>
   <h1>Conspiracy Corner</h1>
   <p>Uncovering the Truth Hidden From the World</p>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">UFOs</a>
-  <a href="#">Secret Societies</a>
-  <a href="#">Government Files</a>
-  <a href="#">Mind Control</a>
+<nav aria-label="Main navigation">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="articles/ufos.html">UFOs</a></li>
+    <li><a href="articles/declassified.html">Secret Societies</a></li>
+    <li><a href="articles/declassified.html">Government Files</a></li>
+    <li><a href="articles/top-10.html">Mind Control</a></li>
+  </ul>
 </nav>
 
-<section class="hero">
-  <h2>The Truth They Don’t Want You To Read</h2>
-  <p>Dive into the deepest secrets of history, hidden technology, and classified operations.</p>
-</section>
+<main id="main">
+  <section class="hero">
+    <h2>The Truth They Don’t Want You To Read</h2>
+    <p>Dive into the deepest secrets of history, hidden technology, and classified operations.</p>
+  </section>
 
-<section class="content">
-  <div class="card">
-    <h3>Top 10 Conspiracy Theories That Were True</h3>
-    <p>Many conspiracies once considered fake have been proven real. Discover shocking truths.</p>
-    <button>Read More</button>
-  </div>
+  <section class="content">
+    <div class="card">
+      <h3>Top 10 Conspiracy Theories That Were True</h3>
+      <p>Many conspiracies once considered fake have been proven real. Discover shocking truths and how they came to light.</p>
+      <a class="btn" href="articles/top-10.html">Read More</a>
+    </div>
 
-  <div class="card">
-    <h3>Declassified Government Experiments</h3>
-    <p>Secret mind experiments, human testing, and underground operations revealed.</p>
-    <button>Read More</button>
-  </div>
+    <div class="card">
+      <h3>Declassified Government Experiments</h3>
+      <p>Secret mind experiments, human testing, and underground operations revealed and examined with primary sources.</p>
+      <a class="btn" href="articles/declassified.html">Read More</a>
+    </div>
 
-  <div class="card">
-    <h3>UFO Sightings Nobody Can Explain</h3>
-    <p>Strange lights, silent crafts, and government silence — who’s really watching us?</p>
-    <button>Read More</button>
-  </div>
-</section>
+    <div class="card">
+      <h3>UFO Sightings Nobody Can Explain</h3>
+      <p>Strange lights, silent crafts, and government silence — who’s really watching us? A balanced look at reported sightings.</p>
+      <a class="btn" href="articles/ufos.html">Read More</a>
+    </div>
+  </section>
 
-<section class="ads">
-  <h3>Advertisement</h3>
-  <p>[ Your Google Adsense Ads Will Appear Here ]</p>
-</section>
+  <section class="ads" aria-label="Advertisement">
+    <h3>Advertisement</h3>
+    <!-- ADSENSE_PLACEHOLDER: Paste your AdSense snippet here. Example:
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+         <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-XXXXXXXXXXXX"
+              data-ad-slot="1234567890"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <p>[ AdSense placeholder — paste your ca-pub ID and ad slot here ]</p>
+  </section>
+</main>
 
 <footer>
-  <p>© 2025 Conspiracy Corner | Knowledge Is Power</p>
+  <p>© <span id="site-year">2025</span> Conspiracy Corner | Knowledge Is Power</p>
 </footer>
 
+<script>
+  // Update footer year automatically
+  document.getElementById('site-year').textContent = new Date().getFullYear();
+</script>
+
 </body>
-     </html>
+</html>
